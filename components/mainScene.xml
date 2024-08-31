@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="mainScene" extends="Scene">
+<interface>
+    <field id="titleText" type="String" />
+    <field id="bgColor" type="String" />
+</interface>
+    <script type="text/brightscript" uri="pkg:/components/mainScene.brs" />
+    <children>
+        <Group id = "bg">
+            <Rectangle id="testRectangle" color="0x000000" width="1920" height="1080"/>
+        </Group>
+        <Label id="labelInicial" text="¿Quién está viendo ahora?" horizAlign="center" vertAlign="center" width="1920" height="300"/>
+        <LayoutGroup id = "layoutgp" LayoutDirection = "horiz" itemSpacings = "[50]" translation="[135, 300]">
+            <Group id="p1">
+                <Rectangle id="rposter1" color="0x73AAFF" width="520" height="450">
+                    <poster id="pposter1" uri="pkg:/images/lion.jpg" width="480" height="410" translation="[20, 20]"/>
+                </Rectangle>
+                <Rectangle id="selectp1" color="0x73AAFF" width="170" height="90" translation="[165, 520]">
+                    <Label id="labelp1" text="Tú" vertAlign="center" horizAlign="center" width="170" height="90">
+                    </Label>
+                </Rectangle>
+            </Group>
+            <Group id="p2">
+                <Rectangle id="poster2" color="0x73AAFF" width="520" height="450">
+                    <poster id="pposter2" uri="pkg:/images/cat.jpg" width="480" height="410" translation="[20, 20]"/>
+                </Rectangle>
+                <Rectangle id="selectp2" color="0x73AAFF" width="170" height="90" translation="[165, 520]">
+                    <Label id="labelp2" text="Yo" vertAlign="center" horizAlign="center" width="170" height="90">
+                    </Label>
+                </Rectangle>
+            </Group>
+            <Group id="p3">
+                <Rectangle id="poster3" color="0x73AAFF" width="520" height="450">
+                    <poster id="pposter3" uri="pkg:/images/seaHorse.jpg" width="480" height="410" translation="[20, 20]"/>
+                </Rectangle>
+                <Rectangle id="selectp3" color="0x73AAFF" width="170" height="90" translation="[165, 520]">
+                    <Label id="labelp3" text="No lo sé" vertAlign="center" horizAlign="center" width="170" height="90">
+                    </Label>
+                </Rectangle>
+            </Group>
+        </LayoutGroup>
+    </children>
+</component>
